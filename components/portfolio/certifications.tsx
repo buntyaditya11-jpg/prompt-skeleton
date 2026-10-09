@@ -20,7 +20,11 @@ export function Certifications() {
           return (
             <li
               key={cert.name}
-              className="flex items-start gap-3 rounded-lg border border-border bg-card p-4"
+              className={`flex items-start gap-3 rounded-lg border border-border bg-card p-4 transition-[border-color,box-shadow,transform] duration-300 hover:-translate-y-0.5 motion-reduce:transition-none motion-reduce:hover:translate-y-0 ${
+                isAi
+                  ? 'hover:border-primary/60 hover:shadow-[0_0_28px_-6px_var(--color-primary)]'
+                  : 'hover:border-accent/60 hover:shadow-[0_0_28px_-6px_var(--color-accent)]'
+              }`}
             >
               <Award
                 className={`mt-0.5 size-5 shrink-0 ${isAi ? 'text-primary' : 'text-accent'}`}

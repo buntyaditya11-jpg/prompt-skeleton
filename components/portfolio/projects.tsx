@@ -27,7 +27,7 @@ export function Projects() {
         {projects.map((project) => (
           <article
             key={project.title}
-            className="group relative flex flex-col overflow-hidden rounded-xl border border-border bg-card p-8 transition-colors hover:border-primary/60 md:p-10"
+            className="group relative flex flex-col overflow-hidden rounded-xl border border-border bg-card p-8 transition-[border-color,box-shadow,transform] duration-300 hover:-translate-y-1 hover:border-primary/60 hover:shadow-[0_0_40px_-8px_var(--color-primary)] motion-reduce:transition-none motion-reduce:hover:translate-y-0 md:p-10"
           >
             <div
               aria-hidden="true"

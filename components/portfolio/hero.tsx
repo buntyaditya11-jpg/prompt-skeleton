@@ -42,6 +42,16 @@ export function Hero() {
             Contact Me
           </a>
         </div>
+        <p className="mt-6 flex items-center gap-2 font-mono text-sm text-muted-foreground">
+          <span className="relative flex size-2" aria-hidden="true">
+            <span className="absolute inline-flex size-full animate-ping rounded-full bg-accent opacity-75 motion-reduce:animate-none" />
+            <span className="relative inline-flex size-2 rounded-full bg-accent" />
+          </span>
+          <span>
+            Currently learning:{' '}
+            <span className="text-foreground">Generative AI and LLM applications</span>
+          </span>
+        </p>
       </div>
     </section>
   )
