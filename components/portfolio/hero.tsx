@@ -23,6 +23,9 @@ export function Hero() {
             AI
           </span>
         </h1>
+        <p className="mt-4 font-mono text-sm uppercase tracking-widest text-accent">
+          Now on GitHub
+        </p>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground text-pretty md:text-xl">
           AI/ML developer and MCA student at DDCE Utkal University, with hands-on
           cybersecurity experience. I build AI-driven solutions with Python and Flask.
